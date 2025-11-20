@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI Pinball Game</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>핀볼 게임</h1>
+    
+    <canvas id="pinballCanvas" width="600" height="800" style="border: 1px solid black;"></canvas>
+
+    <div id="status">연결 대기 중...</div>
+    <div id="messages"></div>
+
+    <button onclick="sendMessage('플리퍼_왼쪽_작동')">Left Flipper</button>
+    <button onclick="sendMessage('플리퍼_오른쪽_작동')">Right Flipper</button>
+    
+    <script src="/static/game.js"></script>
+</body>
+</html>
