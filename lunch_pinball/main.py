@@ -5,7 +5,7 @@ import uvicorn
 import json
 
 app = FastAPI()
-
+#
 # 1. 정적 파일 디렉토리 마운트 (index.html, game.js 등 제공)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
